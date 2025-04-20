@@ -1,0 +1,170 @@
+---
+title: SFU Research Computing 2025 Summer School
+description: |
+  <br>This in-person summer school is offered by SFU's [Research Computing Group](https://www.rcg.sfu.ca) on behalf of the [Digital Research Alliance of
+  Canada](https://alliancecan.ca). It is hosted by [SFU's Big Data Hub](https://www.sfu.ca/big-data.html) and is open to all researchers at SFU and other Canadian post-secondary institutions.
+
+  <!-- To register, please go [here](https://www.eventbrite.ca/e/881514191677). -->
+
+toc: false
+title-block-banner: true
+anchor-sections: false
+---
+
+Each day we will have morning (9:30am - 12:30pm) and afternoon (1:30m - 4:30pm) sessions. <!-- There will be short -->
+<!-- coffee breaks at 11:00am and 3:00pm with coffee and snacks covered by the registration fee. Participants will -->
+<!-- have to find lunch on their own. -->
+
+You can attend as many or as few of the courses as you want. All sessions will be in-person at the Big Data
+Hub at SFU's main (Burnaby) campus, in the Applied Sciences Building (top floor).
+
+To participate in the hands-on exercises, you will need to bring your own laptop. We will provide guest
+accounts on our HPC training cluster. For more specific requirements, please see the individual course
+pages. <br><br><br>
+
+:::{layout="[[2.5, 10], [2.5, 10], [2.5, 5, 5], [2.5, 5, 5], [2.5, 10]]"}
+
+:::{.card-body}
+
+:::{.date}
+
+Monday<br>June 9, 2025
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Unix shell](/bash.qmd){.card-title .stretched-link}
+
+[Full-day introduction to the Unix shell]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Tuesday<br>June 10, 2025
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[HPC](/hpc.qmd){.card-title .stretched-link}
+
+[Full-day introduction to high-performance computing]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Wednesday<br>June 11, 2025
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Git](/git_intro.qmd){.card-title .stretched-link}
+
+[Half-day version control with Git]{.text-muted}
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[R optimizations](/r.qmd){.card-title .stretched-link}
+
+[Half-day R code optimizations]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Thursday<br>June 12, 2025
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Hands-on Git](/git_handson.qmd){.card-title .stretched-link}
+
+[Half-day practical Git session]{.text-muted}
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Chapel](/chapel.qmd){.card-title .stretched-link}
+
+[Half-day programming with Chapel]{.text-muted}
+
+:::
+
+:::
+
+:::{.card-body}
+
+:::{.date}
+
+Friday<br>June 13, 2025
+
+:::
+
+:::
+
+:::{.card .mb-3}
+
+:::{.card-body}
+
+[Accelerated computing with Python](/python.qmd){.card-title .stretched-link}
+
+[Full-day on speeding up Python with compilers and parallel execution]{.text-muted}
+
+:::
+
+:::
+
+:::
+
+<br><br>
+![](/img/sfudrac.png){fig-alt="frontlogo"}
+
+<br>
+<center>Hosted by:</center>
+<br>
+
+<center>![](/img/logo_bigdata.png){fig-alt="frontlogo" width="35%"}</center>

@@ -1,7 +1,7 @@
 ---
 title: Introduction to Chapel
 description: |
-  
+  First dive into parallel programming with Chapel.
 title-block-banner: true
 ---
 

@@ -128,7 +128,7 @@ Thursday<br>June 12, 2025
 
 :::{.card-body}
 
-[Chapel](/chapel.qmd){.card-title .stretched-link}
+[Parallel programming](/chapel.qmd){.card-title .stretched-link}
 
 [Half-day programming with Chapel]{.text-muted}
 

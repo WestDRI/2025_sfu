@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Maven+Pro:wght@400..900&display=swap');
+
 /*. navbar */
 
-/* .navbar { */
-/*   background-color: #373a3c !important; */
-/* } */
+.navbar {
+  --bs-navbar-active-color: #996600 !important;
+}
 
 .navbar-logo {
   box-shadow: none !important;
@@ -33,10 +35,6 @@
 .headroom--not-top {
   display: none;
 }
-
-/* .navbar-toggler { */
-/*     transition: none !important; */
-/* } */
 
 /*. sidebar */
 

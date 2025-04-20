@@ -1,0 +1,25 @@
+---
+title: Hands-on Git
+description: |
+  
+title-block-banner: true
+---
+
+:::{.topdef}
+
+**Date:** \
+Thursday, June 12, 2025
+
+**Time:** \
+9:30am–12:30pm (morning session)
+
+**Instructor:** \
+Marie-Hélène Burle (Simon Fraser University)
+
+**Prerequisites:** \
+This session is a follow-up to the introduction to Git.
+
+**Software:** \
+We will provide access to one of our Linux systems. To make use of it, attendees will need a remote secure shell (SSH) client installed on their computer. On Windows we recommend the [free Home Edition of MobaXterm](https://mobaxterm.mobatek.net/download.html). On Mac and Linux computers, SSH is usually pre-installed (try typing `ssh` in a terminal to make sure it is there).
+
+:::

@@ -1,7 +1,7 @@
 ---
 title: Hands-on Git
 description: |
-  In this guided session you will collaborate on a project of your choice (either Bash, HPC, or R).
+  <br>In this guided session you will collaborate on a project of your choice (either Bash, HPC, or R).
 title-block-banner: true
 ---
 

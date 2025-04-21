@@ -1,7 +1,7 @@
 ---
 title: Introduction to the Unix shell
 description: |
-  Hands-on introduction to the Linux command line and the interaction with a remote server. We will cover working with files and directories, common utilities, loops, redirections, wild cards, functions and scripting, and the basics of working through secure shell.
+  <br>Hands-on introduction to the Linux command line and the interaction with a remote server. We will cover working with files and directories, common utilities, loops, redirections, wild cards, functions and scripting, and the basics of working through secure shell.
 title-block-banner: true
 ---
 

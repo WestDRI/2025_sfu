@@ -1,6 +1,6 @@
 ---
 title: Accelerated Python
-subtitle: Speeding up your Python code with compilers and parallel execution.
+subtitle: Speed up your Python code with compilers and parallel execution.
 description: |
   Python has become the dominant language in scientific computing thanks to its high-level syntax, extensive
   ecosystem, and ease of use. However, its performance often lags behind traditional compiled languages like

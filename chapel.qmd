@@ -1,10 +1,9 @@
 ---
 title: Introduction to Chapel
 description: |
-  If you have never done parallel programming before, this
-  course designed for beginners will guide you through the basic concepts of writing parallel programs for
-  both shared and distributed memory systems.
-  
+  If you have never done parallel programming before, this beginner-friendly course will guide you through the
+  basic concepts of writing data-parallel programs for both shared- and distributed-memory systems.
+
   Chapel is a modern programming language offering high-level, easy-to-use abstractions for task and data
   parallelism. Its intuitive syntax makes it an excellent choice for novice HPC users learning parallel
   programming. Chapel supports a wide range of parallel hardware -- from multicore processors and multi-node

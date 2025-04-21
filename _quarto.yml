@@ -53,7 +53,7 @@ website:
         href: r.qmd
       - text: Hands-on Git
         href: git_handson.qmd
-      - text: Chapel
+      - text: Parallel programming
         href: chapel.qmd
       - text: Accelerated Python
         href: python.qmd

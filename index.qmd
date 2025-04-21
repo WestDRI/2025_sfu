@@ -150,7 +150,7 @@ Friday<br>June 13, 2025
 
 :::{.card-body}
 
-[Accelerated computing with Python](/python.qmd){.card-title .stretched-link}
+[Accelerated Python](/python.qmd){.card-title .stretched-link}
 
 [Full-day on speeding up Python with compilers and parallel execution]{.text-muted}
 

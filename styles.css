@@ -233,6 +233,12 @@ img[alt=frontlogo] {
   color: #44494d;
   border: 0.5pt solid #e8e2e9;
   border-radius: 5px;
+  a {
+    color: #962b2d;
+  }
+  a:hover {
+    color: #b5111b;
+  }
 }
 
 @media(max-width: 500px) {

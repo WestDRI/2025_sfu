@@ -15,8 +15,7 @@ Each day we will have morning (9:30am - 12:30pm) and afternoon (1:30m - 4:30pm) 
 <!-- coffee breaks at 11:00am and 3:00pm with coffee and snacks covered by the registration fee. Participants will -->
 <!-- have to find lunch on their own. -->
 
-You can attend as many or as few of the courses as you want. All sessions will be in-person at the Big Data
-Hub at SFU's main (Burnaby) campus, in the Applied Sciences Building (top floor).
+You can attend as many or as few of the courses as you want. All sessions will be in-person at SFU Burnaby campus, in SFU's Big Data Hub Presentation Studio (Applied Sciences Building, ASB 10900).
 
 To participate in the hands-on exercises, you will need to bring your own laptop. We will provide guest
 accounts on our HPC training cluster. For more specific requirements, please see the individual course

@@ -17,7 +17,7 @@ Monday, June 9, 2025
 SFU's Big Data Hub Presentation Studio (ASB 10900)
 
 **Instructor:** \
-Marie-Hélène Burle (Simon Fraser University)
+Marie-Hélène Burle
 
 **Prerequisites:** \
 This introductory course does not require any previous experience.

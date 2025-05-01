@@ -17,7 +17,7 @@ Tuesday, June 10, 2025
 SFU's Big Data Hub Presentation Studio (ASB 10900)
 
 **Instructor:** \
-Alex Razoumov (Simon Fraser University)
+Alex Razoumov
 
 **Prerequisites:** \
 Working knowledge of the Unix shell.

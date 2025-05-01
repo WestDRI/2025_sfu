@@ -35,7 +35,7 @@ Friday, June 13, 2025
 SFU's Big Data Hub Presentation Studio (ASB 10900)
 
 **Instructor:** \
-Alex Razoumov (Simon Fraser University)
+Alex Razoumov
 
 **Prerequisites:** \
 Some knowledge of basic Python, numpy, and working with the Slurm scheduler.

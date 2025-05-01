@@ -17,7 +17,7 @@ Thursday, June 12, 2025
 SFU's Big Data Hub Presentation Studio (ASB 10900)
 
 **Instructor:** \
-Marie-Hélène Burle (Simon Fraser University)
+Marie-Hélène Burle
 
 **Prerequisites:** \
 This session is a follow-up to the introduction to Git.

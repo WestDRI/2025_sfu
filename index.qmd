@@ -59,7 +59,7 @@ Tuesday<br>June 10, 2025
 
 :::{.card-body}
 
-[[Cedar tour <br><br>](/tour.qmd)]{.text-muted}
+[Cedar tour <br><br>](/tour.qmd)
 
 :::
 

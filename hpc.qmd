@@ -11,7 +11,7 @@ title-block-banner: true
 Tuesday, June 10, 2025
 
 **Time:** \
-9:30am–4:30pm with a one-hour lunch break (12:30pm-1:30pm)
+10:00am–4:30pm with a one-hour lunch break (12:30pm-1:30pm)
 
 **Location:** \
 SFU's Big Data Hub Presentation Studio (ASB 10900)

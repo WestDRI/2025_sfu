@@ -22,7 +22,7 @@ To participate in the hands-on exercises, you will need to bring your own laptop
 accounts on our HPC training cluster. For more specific requirements, please see the individual course
 pages. <br><br><br>
 
-:::{layout="[[2.5, 10], [2.5, 10], [2.5, 5, 5], [2.5, 5, 5], [2.5, 10]]"}
+:::{layout="[[2.5, 10], [2.5, 1, 9], [2.5, 5, 5], [2.5, 5, 5], [2.5, 10]]"}
 
 :::{.card-body}
 
@@ -51,6 +51,16 @@ Monday<br>June 9, 2025
 :::{.date}
 
 Tuesday<br>June 10, 2025
+
+:::
+
+:::
+
+:::{.card-special .mb-3}
+
+:::{.card-body}
+
+[[Cedar tour <br><br>](/tour.qmd)]{.text-muted}
 
 :::
 

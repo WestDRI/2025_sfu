@@ -1,7 +1,7 @@
 ---
 title: Cedar tour
 description: |
-  <br>A guided tour to Canada's largest supercomputer. You will see the racks of interconnected computers, learn about our various hardware, as well as the cooling and powering systems.
+  <br>A guided tour to [Canada's largest supercomputer](https://www.sfu.ca/research/institutes-centres-facilities/other-facilities/supercomputer-cedar.html). You will see the racks of interconnected computers, learn about our various hardware, as well as the cooling and powering systems.
 title-block-banner: true
 ---
 

@@ -45,10 +45,10 @@ website:
     left:
       - text: Unix shell
         href: bash.qmd
-      - text: HPC
-        href: hpc.qmd
       - text: Cedar tour
         href: tour.qmd
+      - text: HPC
+        href: hpc.qmd
       - text: Git
         href: git_intro.qmd
       - text: R optimizations

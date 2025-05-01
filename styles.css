@@ -159,7 +159,14 @@
 }
 
 .btn-outline-primary {
+  border: 1px solid #962b2d;
   border-radius: 20px;
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid white;
+  background-color: #962b2d;
+  color: white !important;
 }
 
 .btn-action:hover {
@@ -516,11 +523,7 @@ ul {
 /*. banner */
 
 .quarto-title-banner a {
-  color: #7db3ee !important;
-}
-
-.quarto-title-banner a:hover {
-  color: #2e5b7e !important;
+  color: #962b2d !important;
 }
 
 /*. general */

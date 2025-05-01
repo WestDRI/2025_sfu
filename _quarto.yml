@@ -47,6 +47,8 @@ website:
         href: bash.qmd
       - text: HPC
         href: hpc.qmd
+      - text: Cedar tour
+        href: tour.qmd
       - text: Git
         href: git_intro.qmd
       - text: R optimizations

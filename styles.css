@@ -151,13 +151,6 @@
   background-color: #e1e6ea;
 }
 
-.btn-action {
-  color: white;
-  background-color: #962b2d !important;
-  min-width: 165px;
-  border-radius: 20px;
-}
-
 .btn-outline-primary {
   --bs-btn-color: #962b2d;
   --bs-btn-border-color: #962b2d;
@@ -179,11 +172,6 @@
 
 .btn-outline-primary:hover {
   color: white !important;
-}
-
-.btn-action:hover {
-  color: white;
-  font-weight: 600;
 }
 
 /*. img */

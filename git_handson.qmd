@@ -12,7 +12,7 @@ description: |
   1. collaborate with direct write access to a shared repository,
   1. contribute via pull requests (PRs) when you do not have write access.
 
-  By the end of this session, you'll be able to confidently participate in or manage collaborative projects on
+  By the end of this session, you will be able to confidently participate in or manage collaborative projects on
   GitHub, with a deeper understanding of workflows that suit different access levels.
 title-block-banner: true
 ---

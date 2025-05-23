@@ -532,6 +532,10 @@ ul {
   color: #962b2d !important;
 }
 
+.quarto-title-banner li {
+  font-size: 0.9rem;
+}
+
 /*. general */
 
 a {

@@ -1,7 +1,19 @@
 ---
 title: Hands-on Git
 description: |
-  <br>In this guided session you will collaborate on a project of your choice (either Bash, HPC, or R).
+  <br>
+  In this hands-on session, you will collaborate on a project of your choice: Bash scripting, High-Performance
+  Computing (HPC), or R programming. The session is designed to introduce practical collaboration techniques
+  using GitHub.
+
+  You will learn how to:
+
+  1. set up SSH access to GitHub using a public-private key pair for secure authentication,
+  1. collaborate with direct write access to a shared repository,
+  1. contribute via pull requests (PRs) when you do not have write access.
+
+  By the end of this session, you'll be able to confidently participate in or manage collaborative projects on
+  GitHub, with a deeper understanding of workflows that suit different access levels.
 title-block-banner: true
 ---
 

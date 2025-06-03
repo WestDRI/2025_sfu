@@ -38,3 +38,105 @@ This session is a follow-up to the introduction to Git.
 We will provide access to one of our Linux systems. To make use of it, attendees will need a remote secure shell (SSH) client installed on their computer. On Windows we recommend the [free Home Edition of MobaXterm](https://mobaxterm.mobatek.net/download.html). On Mac and Linux computers, SSH is usually pre-installed (try typing `ssh` in a terminal to make sure it is there).
 
 :::
+
+
+
+
+<!-- <br> -->
+
+<!-- ## Workflow -->
+
+<!-- We will begin with a 30–60 minute lecture covering collaboration on GitHub in two scenarios: (1) when you have -->
+<!-- direct write access to a repository, and (2) when you contribute via pull requests without write access. Then -->
+<!-- we proceed with the hands-on part: -->
+
+<!-- 1. create GitHub accounts -->
+<!-- 1. create a [private-public ssh key pair](https://docs.alliancecan.ca/wiki/SSH_Keys), upload your public key to GitHub -->
+<!-- 1. get into pairs by topic (Bash, HPC, R) -->
+<!-- 1. one person in each team creates a GitHub repo and gives write access to the other person -->
+<!-- 1. each team works on a series of exercises splitting them between the two and collaborating via a single -->
+<!--    GitHub repo -->
+<!-- 1. each pair submits a pull request (PR) to the central Bash+HPC+R repository with their solutions -->
+
+<!-- ### Bash exercises -->
+
+<!-- 1. Write a function `check()` that complains when it does not receive any arguments. -->
+<!-- 2. Write a function `countfiles()` to count files in all directories passed to it as arguments (need to loop -->
+<!--    through all arguments). At the beginning add the check printing the command syntax if nothing was passed to -->
+<!--    the function: -->
+<!-- ```sh -->
+<!-- $ countfiles -->
+<!-- No arguments given. Usage: countfiles dir1 dir2 ... -->
+<!-- $ countfiles <dir1> <dir2> -->
+<!-- dir1 has 10 files -->
+<!-- dir2 has 5 files -->
+<!-- ``` -->
+
+<!-- 3. Write a function to swap two file names. Add a check that both files exist, before renaming them. -->
+<!-- 4. Write a function `archive()` to replace directories with their gzipped archives. -->
+<!-- ```sh -->
+<!-- $ ls -F -->
+<!-- chapter1/  chapter2/  notes/ data/ -->
+<!-- $ archive chapter* notes/ -->
+<!-- $ ls -F -->
+<!-- chapter1.tar.gz  chapter2.tar.gz  notes.tar.gz  data/ -->
+<!-- ``` -->
+<!-- If for any reason the function fails to create an archive, do not remove the original directory. -->
+
+<!-- 5. Write the reverse function `unarchive()` that replaces a gzipped tarball with a directory. -->
+<!-- 6. Imagine that the directory `/project/def-sponsor00/shared/toyModel` contains results from a numerical -->
+<!--    simulation. Write a command to copy every 10th file (starting from `yB31_oneblock_00000.vti`) from this -->
+<!--    directory to one of your own directories. **Hint**: create an alphabetically sorted list of files in that -->
+<!--    directory and then use awk's `NR` variable. -->
+<!-- 7. Similarly to the previous exercise, write a command to create a tar archive that includes every 20th file -->
+<!--    from the simulation directory `/project/def-sponsor00/shared/toyModel`. Is it possible to do this in one -->
+<!--    command? Why does it remove leading '/' from file paths? -->
+<!-- 8. Write a one-line command that finds 5 largest files in the current directory (and all of its -->
+<!--    subdirectories) and prints only their names and file sizes in the human-readable format (indicating bytes, -->
+<!--    kB, MB, GB, ...) in the decreasing file-size order. Hint: use `find`, `xargs`, and `awk`. -->
+<!-- 9. Write a loop to replace spaces to underscores in all file names in the current directory. -->
+<!-- ```sh -->
+<!-- touch hello "first phrase" "second phrase" "good morning, everyone" -->
+<!-- ls -l -->
+<!-- ls *\ * -->
+<!-- ``` -->
+<!-- 10. Write a one-line command that will search for a string in all files in the current directory and all its -->
+<!--     subdirectories, and will hide errors (e.g. due to permissions). -->
+
+<!-- ### HPC exercises -->
+
+<!-- 1. Implement `pi.c` (from the HPC course) in Julia or R, run it via Slurm, compare timing to C and Python -->
+<!--    versions. -->
+<!-- 2. Using `distributedPi.c` as an example, write a C program with a ping-pong communication pattern between two -->
+<!--    MPI processes: rank 0 sends an integer to rank 1, and rank 1 sends it back to rank 0. Use `MPI_Send` and -->
+<!--    `MPI_Recv` functions. Repeat this $N=1000$ times and measure the average round-trip time. Try with (1) two -->
+<!--    cores on one node and (2) two cores on two different nodes. -->
+<!-- 3. Consider the following compact multi-threaded Julia code to compute a [Julia set](https://en.wikipedia.org/wiki/Julia_set): -->
+<!-- ```jl -->
+<!-- using ThreadsX, BenchmarkTools -->
+
+<!-- function pixel(z) -->
+<!--     c = 0.355 + 0.355im -->
+<!--     z *= 1.2   # zoom out -->
+<!--     for i = 1:255 -->
+<!--         z = z^2 + c -->
+<!--         if abs(z) >= 4 -->
+<!--             return i -->
+<!--         end -->
+<!--     end -->
+<!--     return 255 -->
+<!-- end -->
+
+<!-- const height, width = repeat([2_000],2)   # 2000^2 image -->
+
+<!-- println("Computing Julia set ...") -->
+<!-- point = zeros(Complex{Float32}, height, width); -->
+<!-- stability = zeros(Int32, height, width); -->
+<!-- for i in 1:height, j in 1:width -->
+<!--     point[i,j] = (2*(j-0.5)/width-1) + (2*(i-0.5)/height-1)im # rescale to -1:1 in the complex plane -->
+<!-- end -->
+<!-- stability = @btime ThreadsX.map(pixel, point); -->
+<!-- ``` -->
+<!-- Store this code as `juliaSet.jl` and write a Slurm script to run it as a shared-memory job. On the -->
+<!-- training cluster, run this code on 1 core, 2 cores, and so on up to the maximum number of cores per node. You -->
+<!-- will need to install the 3rd-party Julia libraries `ThreadsX.jl` and `BenchmarkTools.jl`. -->

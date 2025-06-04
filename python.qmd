@@ -45,5 +45,7 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 :::
 
-<!-- <br> -->
-<!-- Course notes can be found [here](https://wgpages.netlify.app/hpc-in-summer). -->
+<br>
+
+<!-- * Course notes: [Part 1](https://wgpages.netlify.app/pythonhpc) and [Part 2](https://wgpages.netlify.app/ray). -->
+<!-- * Claim your [username](https://tinyurl.com/clusterusernames) -- write down your name after your selected username. -->

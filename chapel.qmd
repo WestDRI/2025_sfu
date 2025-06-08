@@ -41,5 +41,5 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <br>
 
 <!-- * Course notes: [Part 1](https://wgpages.netlify.app/chapel-compact) and [Part -->
-<!--   2](https://wgpages.netlify.app/chapel-gpu). -->
-<!-- * Claim your [username](https://tinyurl.com/clusterusernames) -- write down your name after your selected username. -->
+<!--   2](https://wgpages.netlify.app/chapel-gpu) -->
+<!-- * Claim your [username](https://tinyurl.com/clusterusernames) -- write down your name after your selected username -->

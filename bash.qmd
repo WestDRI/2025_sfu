@@ -29,5 +29,5 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 <br>
 
-<!-- * [Course notes](https://mint.westdri.ca/bash/). -->
-<!-- * Claim your [username](https://tinyurl.com/clusterusernames) -- write down your name after your selected username. -->
+<!-- * [Course notes](https://mint.westdri.ca/bash) -->
+<!-- * Claim your [username](https://tinyurl.com/clusterusernames) -- write down your name after your selected username -->

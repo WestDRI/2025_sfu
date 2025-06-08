@@ -140,3 +140,5 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- Store this code as `juliaSet.jl` and write a Slurm script to run it as a shared-memory job. On the -->
 <!-- training cluster, run this code on 1 core, 2 cores, and so on up to the maximum number of cores per node. You -->
 <!-- will need to install the 3rd-party Julia libraries `ThreadsX.jl` and `BenchmarkTools.jl`. -->
+
+<!-- 4. Write the function `usage()` described in "Workflows" section in the HPC slides from Tuesday. -->

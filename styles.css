@@ -222,10 +222,10 @@ img[alt=frontlogo] {
   border: 0.5pt solid #e8e2e9;
   border-radius: 5px;
   a {
-    color: #962b2d;
+    color: #b5111b;
   }
   a:hover {
-    color: #b5111b;
+    color: #740b12;
   }
 }
 
@@ -547,7 +547,7 @@ ul {
 /*. banner */
 
 .quarto-title-banner a {
-  color: #962b2d !important;
+  color: #b5111b !important;
 }
 
 .quarto-title-banner li {
@@ -558,6 +558,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: #b5111b;
+}
+
+a:hover {
+  color: #740b12;
 }
 
 .right {

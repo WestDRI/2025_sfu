@@ -31,5 +31,6 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 * [ZIP file](http://bit.ly/introhpc2) with PDF slides and sample codes
   * [alternative download link](http://temp.sh/WdctA/introHPC.zip) - will expire after 3 days
-* If you don't have a username for the training cluster, please claim it
-  [here](https://tinyurl.com/clusterusernames) -- write down your name after your selected username
+* If you don't yet have a username for the training cluster, please claim one
+  [here](https://tinyurl.com/clusterusernames) by choosing an unclaimed username and writing your name or
+  nickname next to it.

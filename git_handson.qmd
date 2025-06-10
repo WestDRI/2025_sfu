@@ -58,7 +58,7 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!--    GitHub repo -->
 <!-- 1. each pair submits a pull request (PR) to the central Bash+HPC+R repository with their solutions -->
 
-<!-- ### Bash exercises -->
+<!-- ## Bash exercises -->
 
 <!-- 1. Write a function `check()` that complains when it does not receive any arguments. -->
 <!-- 2. Write a function `countfiles()` to count files in all directories passed to it as arguments (need to loop -->
@@ -103,7 +103,7 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- 10. Write a one-line command that will search for a string in all files in the current directory and all its -->
 <!--     subdirectories, and will hide errors (e.g. due to permissions). -->
 
-<!-- ### HPC exercises -->
+<!-- ## HPC exercises -->
 
 <!-- 1. Implement `pi.c` (from the HPC course) in Julia or R, run it via Slurm, compare timing to C and Python -->
 <!--    versions. -->

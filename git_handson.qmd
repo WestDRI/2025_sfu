@@ -56,10 +56,16 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 <!-- ## Bash exercises -->
 
-<!-- 1. Write a function `check()` that complains when it does not receive any arguments. -->
-<!-- 2. Write a function `countfiles()` to count files in all directories passed to it as arguments (need to loop -->
+<!-- ### Bash exercise 1 -->
+
+<!-- Write a function `check()` that complains when it does not receive any arguments. -->
+
+<!-- ### Bash exercise 2 -->
+
+<!-- Write a function `countfiles()` to count files in all directories passed to it as arguments (need to loop -->
 <!--    through all arguments). At the beginning add the check printing the command syntax if nothing was passed to -->
 <!--    the function: -->
+
 <!-- ```sh -->
 <!-- $ countfiles -->
 <!-- No arguments given. Usage: countfiles dir1 dir2 ... -->
@@ -68,8 +74,14 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- dir2 has 5 files -->
 <!-- ``` -->
 
-<!-- 3. Write a function to swap two file names. Add a check that both files exist, before renaming them. -->
-<!-- 4. Write a function `archive()` to replace directories with their gzipped archives. -->
+<!-- ### Bash exercise 3 -->
+
+<!-- Write a function to swap two file names. Add a check that both files exist, before renaming them. -->
+
+<!-- ### Bash exercise 4 -->
+
+<!-- Write a function `archive()` to replace directories with their gzipped archives. -->
+
 <!-- ```sh -->
 <!-- $ ls -F -->
 <!-- chapter1/  chapter2/  notes/ data/ -->
@@ -77,39 +89,70 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- $ ls -F -->
 <!-- chapter1.tar.gz  chapter2.tar.gz  notes.tar.gz  data/ -->
 <!-- ``` -->
+
 <!-- If for any reason the function fails to create an archive, do not remove the original directory. -->
 
-<!-- 5. Write the reverse function `unarchive()` that replaces a gzipped tarball with a directory. -->
-<!-- 6. Imagine that the directory `/project/def-sponsor00/shared/toyModel` contains results from a numerical -->
+<!-- ### Bash exercise 5 -->
+
+<!-- Write the reverse function `unarchive()` that replaces a gzipped tarball with a directory. -->
+
+<!-- ### Bash exercise 6 -->
+
+<!-- Imagine that the directory `/project/def-sponsor00/shared/toyModel` contains results from a numerical -->
 <!--    simulation. Write a command to copy every 10th file (starting from `yB31_oneblock_00000.vti`) from this -->
 <!--    directory to one of your own directories. **Hint**: create an alphabetically sorted list of files in that -->
 <!--    directory and then use awk's `NR` variable. -->
-<!-- 7. Similarly to the previous exercise, write a command to create a tar archive that includes every 20th file -->
+
+<!-- ### Bash exercise 7 -->
+
+<!-- Similarly to the previous exercise, write a command to create a tar archive that includes every 20th file -->
 <!--    from the simulation directory `/project/def-sponsor00/shared/toyModel`. Is it possible to do this in one -->
 <!--    command? Why does it remove leading '/' from file paths? -->
-<!-- 8. Write a one-line command that finds 5 largest files in the current directory (and all of its -->
+
+<!-- ### Bash exercise 8 -->
+
+<!-- Write a one-line command that finds 5 largest files in the current directory (and all of its -->
 <!--    subdirectories) and prints only their names and file sizes in the human-readable format (indicating bytes, -->
 <!--    kB, MB, GB, ...) in the decreasing file-size order. Hint: use `find`, `xargs`, and `awk`. -->
-<!-- 9. Write a loop to replace spaces to underscores in all file names in the current directory. -->
+
+<!-- ### Bash exercise 9 -->
+
+<!-- Write a loop to replace spaces to underscores in all file names in the current directory. -->
+
 <!-- ```sh -->
 <!-- touch hello "first phrase" "second phrase" "good morning, everyone" -->
 <!-- ls -l -->
 <!-- ls *\ * -->
 <!-- ``` -->
-<!-- 10. Write a one-line command that will search for a string in all files in the current directory and all its -->
+
+<!-- ### Bash exercise 10 -->
+
+<!-- Write a one-line command that will search for a string in all files in the current directory and all its -->
 <!--     subdirectories, and will hide errors (e.g. due to permissions). -->
-<!-- 11. Using brace expansion (`{...}`), write a one-line command to create 365 empty Markdown files in the format -->
+
+<!-- ### Bash exercise 11 -->
+
+<!-- Using brace expansion (`{...}`), write a one-line command to create 365 empty Markdown files in the format -->
 <!--     `YEAR-MON-DD.md`, i.e. `2025-Jan-01.md, 2025-Jan-02.md, ..., 2025-Dec-31.md`. -->
 
 <!-- ## HPC exercises -->
 
-<!-- 1. Implement `pi.c` (from the HPC course) in Julia or R, run it via Slurm, compare timing to C and Python -->
+<!-- ### HPC exercise 1 -->
+
+<!-- Implement `pi.c` (from the HPC course) in Julia or R, run it via Slurm, compare timing to C and Python -->
 <!--    versions. -->
-<!-- 2. Using `distributedPi.c` as an example, write a C program with a ping-pong communication pattern between two -->
+
+<!-- ### HPC exercise 2 -->
+
+<!-- Using `distributedPi.c` as an example, write a C program with a ping-pong communication pattern between two -->
 <!--    MPI processes: rank 0 sends an integer to rank 1, and rank 1 sends it back to rank 0. Use `MPI_Send` and -->
 <!--    `MPI_Recv` functions. Repeat this $N=1000$ times and measure the average round-trip time. Try with (1) two -->
 <!--    cores on one node and (2) two cores on two different nodes. -->
-<!-- 3. Consider the following compact multi-threaded Julia code to compute a [Julia set](https://en.wikipedia.org/wiki/Julia_set): -->
+
+<!-- ### HPC exercise 3 -->
+
+<!-- Consider the following compact multi-threaded Julia code to compute a [Julia set](https://en.wikipedia.org/wiki/Julia_set): -->
+
 <!-- ```jl -->
 <!-- using ThreadsX, BenchmarkTools -->
 
@@ -135,8 +178,12 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- end -->
 <!-- stability = @btime ThreadsX.map(pixel, point); -->
 <!-- ``` -->
+
 <!-- Store this code as `juliaSet.jl` and write a Slurm script to run it as a shared-memory job. On the -->
 <!-- training cluster, run this code on 1 core, 2 cores, and so on up to the maximum number of cores per node. You -->
 <!-- will need to install the 3rd-party Julia libraries `ThreadsX.jl` and `BenchmarkTools.jl`. -->
 
-<!-- 4. Write the function `usage()` described in the "Workflows" section in the HPC slides from Tuesday. -->
+<!-- ### HPC exercise 4 -->
+
+<!-- Write the function `usage()` described in the "Workflows" section in the HPC slides from Tuesday. -->
+

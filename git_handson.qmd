@@ -98,6 +98,8 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- ``` -->
 <!-- 10. Write a one-line command that will search for a string in all files in the current directory and all its -->
 <!--     subdirectories, and will hide errors (e.g. due to permissions). -->
+<!-- 11. Using brace expansion (`{...}`), write a one-line command to create 365 empty Markdown files in the format -->
+<!--     `YEAR-MON-DD.md`, i.e. `2025-Jan-01.md, 2025-Jan-02.md, ..., 2025-Dec-31.md`. -->
 
 <!-- ## HPC exercises -->
 

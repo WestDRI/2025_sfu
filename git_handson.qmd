@@ -39,9 +39,6 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 :::
 
-
-
-
 <!-- <br> -->
 
 <!-- ## Workflow -->
@@ -50,13 +47,12 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- direct write access to a repository, and (2) when you contribute via pull requests without write access. Then -->
 <!-- we proceed with the hands-on part: -->
 
-<!-- 1. create GitHub accounts -->
-<!-- 1. create a [private-public ssh key pair](https://docs.alliancecan.ca/wiki/SSH_Keys), upload your public key to GitHub -->
-<!-- 1. get into pairs by topic (Bash, HPC, R) -->
-<!-- 1. one person in each team creates a GitHub repo and gives write access to the other person -->
-<!-- 1. each team works on a series of exercises splitting them between the two and collaborating via a single -->
-<!--    GitHub repo -->
-<!-- 1. each pair submits a pull request (PR) to the central Bash+HPC+R repository with their solutions -->
+<!-- 1. Create GitHub accounts. -->
+<!-- 1. Create a [private-public ssh key pair](https://docs.alliancecan.ca/wiki/SSH_Keys), upload your public key to GitHub. -->
+<!-- 1. Get into pairs by topic (Bash, HPC, R). -->
+<!-- 1. One person in each team creates a GitHub repo and gives write access to the other person. -->
+<!-- 1. Each team works on a series of exercises splitting them between the two and collaborating via a single GitHub repo. -->
+<!-- 1. Each pair submits a pull request (PR) to the central Bash+HPC+R repository with their solutions. -->
 
 <!-- ## Bash exercises -->
 
@@ -141,4 +137,4 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- training cluster, run this code on 1 core, 2 cores, and so on up to the maximum number of cores per node. You -->
 <!-- will need to install the 3rd-party Julia libraries `ThreadsX.jl` and `BenchmarkTools.jl`. -->
 
-<!-- 4. Write the function `usage()` described in "Workflows" section in the HPC slides from Tuesday. -->
+<!-- 4. Write the function `usage()` described in the "Workflows" section in the HPC slides from Tuesday. -->

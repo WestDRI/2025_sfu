@@ -40,6 +40,8 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 <br>
 
-<!-- * Course notes: [Part 1](https://wgpages.netlify.app/chapel-compact) and [Part -->
-<!--   2](https://wgpages.netlify.app/chapel-gpu) -->
-<!-- * Claim your [username](https://tinyurl.com/clusterusernames) -- write down your name after your selected username -->
+* Course notes: [Part 1 - Data parallelism](https://wgpages.netlify.app/chapel-compact)
+  and [Part 2 - GPU programming](https://wgpages.netlify.app/chapel-gpu)
+* If you don't yet have a username for the training cluster, please claim one
+  [here](https://tinyurl.com/clusterusernames) by choosing an unclaimed username and writing your name or
+  nickname next to it.

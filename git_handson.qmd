@@ -39,176 +39,176 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 :::
 
-<!-- <br> -->
-<!-- Course notes can be found [here](https://mint.westdri.ca/git/top_col). -->
+<br>
+Course notes can be found [here](https://mint.westdri.ca/git/top_col).
 
-<!-- ## Workflow -->
+## Workflow
 
-<!-- We will begin with a 30–60 minute lecture covering collaboration on GitHub in two scenarios: (1) when you have -->
-<!-- direct write access to a repository, and (2) when you contribute via pull requests without write access. Then -->
-<!-- we proceed with the hands-on part: -->
+We will begin with a 30–60 minute lecture covering collaboration on GitHub in two scenarios: (1) when you have
+direct write access to a repository, and (2) when you contribute via pull requests without write access. Then
+we proceed with the hands-on part:
 
-<!-- 1. Create GitHub accounts. -->
-<!-- 1. Create a [private-public ssh key pair](https://docs.alliancecan.ca/wiki/SSH_Keys), upload your public key to GitHub. -->
-<!-- 1. Get into pairs by topic (Bash, HPC, R). -->
-<!-- 1. One person in each team creates a GitHub repo and gives write access to the other person. -->
-<!-- 1. Each team works on a series of exercises splitting them between the two and collaborating via a single GitHub repo. -->
-<!-- 1. Each pair submits a pull request (PR) to the central Bash+HPC+R repository with their solutions. -->
+1. Create GitHub accounts.
+1. Create a [private-public ssh key pair](https://docs.alliancecan.ca/wiki/SSH_Keys), upload your public key to GitHub.
+1. Get into pairs by topic (Bash, HPC, R).
+1. One person in each team creates a GitHub repo and gives write access to the other person.
+1. Each team works on a series of exercises splitting them between the two and collaborating via a single GitHub repo.
+1. Each pair submits a pull request (PR) to the central Bash+HPC+R repository with their solutions.
 
-<!-- ## Bash exercises -->
+## Bash exercises
 
-<!-- ### Bash exercise 1 -->
+### Bash exercise 1
 
-<!-- Write a function `check()` that complains when it does not receive any arguments. -->
+Write a function `check()` that complains when it does not receive any arguments.
 
-<!-- ### Bash exercise 2 -->
+### Bash exercise 2
 
-<!-- Write a function `countfiles()` to count files in all directories passed to it as arguments (need to loop -->
-<!--    through all arguments). At the beginning add the check printing the command syntax if nothing was passed to -->
-<!--    the function: -->
+Write a function `countfiles()` to count files in all directories passed to it as arguments (need to loop
+   through all arguments). At the beginning add the check printing the command syntax if nothing was passed to
+   the function:
 
-<!-- ```sh -->
-<!-- $ countfiles -->
-<!-- No arguments given. Usage: countfiles dir1 dir2 ... -->
-<!-- $ countfiles <dir1> <dir2> -->
-<!-- dir1 has 10 files -->
-<!-- dir2 has 5 files -->
-<!-- ``` -->
+```sh
+$ countfiles
+No arguments given. Usage: countfiles dir1 dir2 ...
+$ countfiles <dir1> <dir2>
+dir1 has 10 files
+dir2 has 5 files
+```
 
-<!-- ### Bash exercise 3 -->
+### Bash exercise 3
 
-<!-- Write a function to swap two file names. Add a check that both files exist, before renaming them. -->
+Write a function to swap two file names. Add a check that both files exist, before renaming them.
 
-<!-- ### Bash exercise 4 -->
+### Bash exercise 4
 
-<!-- Write a function `archive()` to replace directories with their gzipped archives. -->
+Write a function `archive()` to replace directories with their gzipped archives.
 
-<!-- ```sh -->
-<!-- $ ls -F -->
-<!-- chapter1/  chapter2/  notes/ data/ -->
-<!-- $ archive chapter* notes/ -->
-<!-- $ ls -F -->
-<!-- chapter1.tar.gz  chapter2.tar.gz  notes.tar.gz  data/ -->
-<!-- ``` -->
+```sh
+$ ls -F
+chapter1/  chapter2/  notes/ data/
+$ archive chapter* notes/
+$ ls -F
+chapter1.tar.gz  chapter2.tar.gz  notes.tar.gz  data/
+```
 
-<!-- If for any reason the function fails to create an archive, do not remove the original directory. -->
+If for any reason the function fails to create an archive, do not remove the original directory.
 
-<!-- ### Bash exercise 5 -->
+### Bash exercise 5
 
-<!-- Write the reverse function `unarchive()` that replaces a gzipped tarball with a directory. -->
+Write the reverse function `unarchive()` that replaces a gzipped tarball with a directory.
 
-<!-- ### Bash exercise 6 -->
+### Bash exercise 6
 
-<!-- Imagine that the directory `/project/def-sponsor00/shared/toyModel` contains results from a numerical -->
-<!--    simulation. Write a command to copy every 10th file (starting from `yB31_oneblock_00000.vti`) from this -->
-<!--    directory to one of your own directories. **Hint**: create an alphabetically sorted list of files in that -->
-<!--    directory and then use awk's `NR` variable. -->
+Imagine that the directory `/project/def-sponsor00/shared/toyModel` contains results from a numerical
+   simulation. Write a command to copy every 10th file (starting from `yB31_oneblock_00000.vti`) from this
+   directory to one of your own directories. **Hint**: create an alphabetically sorted list of files in that
+   directory and then use awk's `NR` variable.
 
-<!-- ### Bash exercise 7 -->
+### Bash exercise 7
 
-<!-- Similarly to the previous exercise, write a command to create a tar archive that includes every 20th file -->
-<!--    from the simulation directory `/project/def-sponsor00/shared/toyModel`. Is it possible to do this in one -->
-<!--    command? Why does it remove leading '/' from file paths? -->
+Similarly to the previous exercise, write a command to create a tar archive that includes every 20th file
+   from the simulation directory `/project/def-sponsor00/shared/toyModel`. Is it possible to do this in one
+   command? Why does it remove leading '/' from file paths?
 
-<!-- ### Bash exercise 8 -->
+### Bash exercise 8
 
-<!-- Write a one-line command that finds 5 largest files in the current directory (and all of its -->
-<!--    subdirectories) and prints only their names and file sizes in the human-readable format (indicating bytes, -->
-<!--    kB, MB, GB, ...) in the decreasing file-size order. Hint: use `find`, `xargs`, and `awk`. -->
+Write a one-line command that finds 5 largest files in the current directory (and all of its
+   subdirectories) and prints only their names and file sizes in the human-readable format (indicating bytes,
+   kB, MB, GB, ...) in the decreasing file-size order. Hint: use `find`, `xargs`, and `awk`.
 
-<!-- ### Bash exercise 9 -->
+### Bash exercise 9
 
-<!-- Write a loop to replace spaces to underscores in all file names in the current directory. -->
+Write a loop to replace spaces to underscores in all file names in the current directory.
 
-<!-- ```sh -->
-<!-- touch hello "first phrase" "second phrase" "good morning, everyone" -->
-<!-- ls -l -->
-<!-- ls *\ * -->
-<!-- ``` -->
+```sh
+touch hello "first phrase" "second phrase" "good morning, everyone"
+ls -l
+ls *\ *
+```
 
-<!-- ### Bash exercise 10 -->
+### Bash exercise 10
 
-<!-- Write a one-line command that will search for a string in all files in the current directory and all its -->
-<!--     subdirectories, and will hide errors (e.g. due to permissions). -->
+Write a one-line command that will search for a string in all files in the current directory and all its
+    subdirectories, and will hide errors (e.g. due to permissions).
 
-<!-- ### Bash exercise 11 -->
+### Bash exercise 11
 
-<!-- Using brace expansion (`{...}`), write a one-line command to create 365 empty Markdown files in the format -->
-<!--     `YEAR-MON-DD.md`, i.e. `2025-Jan-01.md, 2025-Jan-02.md, ..., 2025-Dec-31.md`. -->
+Using brace expansion (`{...}`), write a one-line command to create 365 empty Markdown files in the format
+    `YEAR-MON-DD.md`, i.e. `2025-Jan-01.md, 2025-Jan-02.md, ..., 2025-Dec-31.md`.
 
-<!-- ## HPC exercises -->
+## HPC exercises
 
-<!-- ### HPC exercise 1 -->
+### HPC exercise 1
 
-<!-- Implement `pi.c` (from the HPC course) in Julia or R, run it via Slurm, compare timing to C and Python -->
-<!--    versions. -->
+Implement `pi.c` (from the HPC course) in Julia or R, run it via Slurm, compare timing to C and Python
+   versions.
 
-<!-- ### HPC exercise 2 -->
+### HPC exercise 2
 
-<!-- Using `distributedPi.c` as an example, write a C program with a ping-pong communication pattern between two -->
-<!--    MPI processes: rank 0 sends an integer to rank 1, and rank 1 sends it back to rank 0. Use `MPI_Send` and -->
-<!--    `MPI_Recv` functions. Repeat this $N=1000$ times and measure the average round-trip time. Try with (1) two -->
-<!--    cores on one node and (2) two cores on two different nodes. -->
+Using `distributedPi.c` as an example, write a C program with a ping-pong communication pattern between two
+   MPI processes: rank 0 sends an integer to rank 1, and rank 1 sends it back to rank 0. Use `MPI_Send` and
+   `MPI_Recv` functions. Repeat this $N=1000$ times and measure the average round-trip time. Try with (1) two
+   cores on one node and (2) two cores on two different nodes.
 
-<!-- ### HPC exercise 3 -->
+### HPC exercise 3
 
-<!-- Consider the following compact multi-threaded Julia code to compute a [Julia set](https://en.wikipedia.org/wiki/Julia_set): -->
+Consider the following compact multi-threaded Julia code to compute a [Julia set](https://en.wikipedia.org/wiki/Julia_set):
 
-<!-- ```jl -->
-<!-- using ThreadsX, BenchmarkTools -->
+```jl
+using ThreadsX, BenchmarkTools
 
-<!-- function pixel(z) -->
-<!--     c = 0.355 + 0.355im -->
-<!--     z *= 1.2   # zoom out -->
-<!--     for i = 1:255 -->
-<!--         z = z^2 + c -->
-<!--         if abs(z) >= 4 -->
-<!--             return i -->
-<!--         end -->
-<!--     end -->
-<!--     return 255 -->
-<!-- end -->
+function pixel(z)
+    c = 0.355 + 0.355im
+    z *= 1.2   # zoom out
+    for i = 1:255
+        z = z^2 + c
+        if abs(z) >= 4
+            return i
+        end
+    end
+    return 255
+end
 
-<!-- const height, width = repeat([2_000],2)   # 2000^2 image -->
+const height, width = repeat([2_000],2)   # 2000^2 image
 
-<!-- println("Computing Julia set ...") -->
-<!-- point = zeros(Complex{Float32}, height, width); -->
-<!-- stability = zeros(Int32, height, width); -->
-<!-- for i in 1:height, j in 1:width -->
-<!--     point[i,j] = (2*(j-0.5)/width-1) + (2*(i-0.5)/height-1)im # rescale to -1:1 in the complex plane -->
-<!-- end -->
-<!-- stability = @btime ThreadsX.map(pixel, point); -->
-<!-- ``` -->
+println("Computing Julia set ...")
+point = zeros(Complex{Float32}, height, width);
+stability = zeros(Int32, height, width);
+for i in 1:height, j in 1:width
+    point[i,j] = (2*(j-0.5)/width-1) + (2*(i-0.5)/height-1)im # rescale to -1:1 in the complex plane
+end
+stability = @btime ThreadsX.map(pixel, point);
+```
 
-<!-- Store this code as `juliaSet.jl` and write a Slurm script to run it as a shared-memory job. On the -->
-<!-- training cluster, run this code on 1 core, 2 cores, and so on up to the maximum number of cores per node. You -->
-<!-- will need to install the 3rd-party Julia libraries `ThreadsX.jl` and `BenchmarkTools.jl`. -->
+Store this code as `juliaSet.jl` and write a Slurm script to run it as a shared-memory job. On the
+training cluster, run this code on 1 core, 2 cores, and so on up to the maximum number of cores per node. You
+will need to install the 3rd-party Julia libraries `ThreadsX.jl` and `BenchmarkTools.jl`.
 
-<!-- ### HPC exercise 4 -->
+### HPC exercise 4
 
-<!-- Write the function `usage()` described in the "Workflows" section in the HPC slides from Tuesday. -->
+Write the function `usage()` described in the "Workflows" section in the HPC slides from Tuesday.
 
-<!-- ## R exercises -->
+## R exercises
 
-<!-- ### R exercise 1 -->
+### R exercise 1
 
-<!-- Consider the following code: -->
+Consider the following code:
 
-<!-- ```{.r} -->
-<!-- f1 <- function(n) { -->
-<!--   squares_sum <- 0 -->
-<!--   for(i in 1:length(n)) { -->
-<!--     squares_sum <- squares_sum + n[i]^2 -->
-<!--   } -->
-<!--   squares_sum -->
-<!-- } -->
+```{.r}
+f1 <- function(n) {
+  squares_sum <- 0
+  for(i in 1:length(n)) {
+    squares_sum <- squares_sum + n[i]^2
+  }
+  squares_sum
+}
 
-<!-- n <- 1:10000 -->
+n <- 1:10000
 
-<!-- f1(n) -->
-<!-- ``` -->
+f1(n)
+```
 
-<!-- Write a function `f2()` that is more efficient than `f1()` (make sure that both functions give you the same result and that `f2()` is indeed faster). -->
+Write a function `f2()` that is more efficient than `f1()` (make sure that both functions give you the same result and that `f2()` is indeed faster).
 
 <!-- :::{.notenoit} -->
 
@@ -231,54 +231,75 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 
 <!-- ::: -->
 
-<!-- ### R exercise 2 -->
+### R exercise 2
 
-<!-- Consider the following code: -->
+Consider the following code:
+
+```{.r}
+f1 <- function(n) {
+  cum_sum <- numeric(0)
+  for (i in 1:length(n)) {
+    cum_sum <- c(cum_sum, sum(n[1:i]))
+  }
+  cum_sum
+}
+
+n <- 1:10000
+
+f1(n)
+```
+
+Write a more efficient code that gives the same result.
+
+<!-- :::{.notenoit} -->
+
+<!-- Answer: -->
 
 <!-- ```{.r} -->
-<!-- f1 <- function(n) { -->
-<!--   cum_sum <- numeric(0) -->
-<!--   for (i in 1:length(n)) { -->
-<!--     cum_sum <- c(cum_sum, sum(n[1:i])) -->
-<!--   } -->
-<!--   cum_sum -->
-<!-- } -->
+<!-- library(bench) -->
 
 <!-- n <- 1:10000 -->
 
-<!-- f1(n) -->
+<!-- cumsum(n) -->
+
+<!-- mark(f1(n), cumsum(n)) -->
 <!-- ``` -->
 
-<!-- Write a more efficient code that gives the same result. -->
+<!-- ::: -->
 
-<!-- <\!-- :::{.notenoit} -\-> -->
+### R exercise 3
 
-<!-- <\!-- Answer: -\-> -->
+Consider the code:
 
-<!-- <\!-- ```{.r} -\-> -->
-<!-- <\!-- library(bench) -\-> -->
+```{.r}
+f1 <- function(n, threshold) {
+  count <- 0
+  for (i in 1:length(n)) {
+    if (n[i] > threshold) {
+      count <- count + 1
+    }
+  }
+  count
+}
 
-<!-- <\!-- n <- 1:10000 -\-> -->
+set.seed(42)
+n <- runif(100000, min = 0, max = 1000)
+threshold <- 500
 
-<!-- <\!-- cumsum(n) -\-> -->
+f1(n, threshold)
+```
 
-<!-- <\!-- mark(f1(n), cumsum(n)) -\-> -->
-<!-- <\!-- ``` -\-> -->
+Write a function `f2()` that is more efficient than `f1()` (make sure that both functions give you the same result and that `f2()` is indeed faster).
 
-<!-- <\!-- ::: -\-> -->
+<!-- :::{.notenoit} -->
 
-<!-- ### R exercise 3 -->
-
-<!-- Consider the code: -->
+<!-- Answer: -->
 
 <!-- ```{.r} -->
-<!-- f1 <- function(n, threshold) { -->
-<!--   count <- 0 -->
-<!--   for (i in 1:length(n)) { -->
-<!--     if (n[i] > threshold) { -->
-<!--       count <- count + 1 -->
-<!--     } -->
-<!--   } -->
+<!-- library(bench) -->
+
+<!-- f2 <- function(n, threshold) { -->
+<!--   count <- sum(n > threshold) -->
 <!--   count -->
 <!-- } -->
 
@@ -286,30 +307,9 @@ We will provide access to one of our Linux systems. To make use of it, attendees
 <!-- n <- runif(100000, min = 0, max = 1000) -->
 <!-- threshold <- 500 -->
 
-<!-- f1(n, threshold) -->
+<!-- f2(n, threshold) -->
+
+<!-- mark(f1(n, threshold), f2(n, threshold)) -->
 <!-- ``` -->
 
-<!-- Write a function `f2()` that is more efficient than `f1()` (make sure that both functions give you the same result and that `f2()` is indeed faster). -->
-
-<!-- <\!-- :::{.notenoit} -\-> -->
-
-<!-- <\!-- Answer: -\-> -->
-
-<!-- <\!-- ```{.r} -\-> -->
-<!-- <\!-- library(bench) -\-> -->
-
-<!-- <\!-- f2 <- function(n, threshold) { -\-> -->
-<!-- <\!--   count <- sum(n > threshold) -\-> -->
-<!-- <\!--   count -\-> -->
-<!-- <\!-- } -\-> -->
-
-<!-- <\!-- set.seed(42) -\-> -->
-<!-- <\!-- n <- runif(100000, min = 0, max = 1000) -\-> -->
-<!-- <\!-- threshold <- 500 -\-> -->
-
-<!-- <\!-- f2(n, threshold) -\-> -->
-
-<!-- <\!-- mark(f1(n, threshold), f2(n, threshold)) -\-> -->
-<!-- <\!-- ``` -\-> -->
-
-<!-- <\!-- ::: -\-> -->
+<!-- ::: -->
